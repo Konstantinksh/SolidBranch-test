@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IUser } from './models/user';
+import { users } from './data/jsonviewer';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +10,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Kanstantsin Krauchuk';
   subtitle = 'SolidBranch test task';
+  data: IUser[] = users.data;
 }
