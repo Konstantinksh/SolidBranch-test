@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IUser } from './models/user';
 import { users } from './data/jsonviewer';
 
@@ -11,4 +11,5 @@ export class AppComponent {
   title = 'Kanstantsin Krauchuk';
   subtitle = 'SolidBranch test task';
   data: IUser[] = users.data;
+  buttons = ['Income', 'Outcome', 'Loan', 'Investments']
 }

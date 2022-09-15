@@ -5,16 +5,13 @@
 <main class="d-flex justify-content-center">
   <section class="d-flex flex-column m-5 border border-dark rounded">
     <div class="d-flex justify-content-center btn-group">
-      <app-button>Income</app-button>
-      <app-button>Outcome</app-button>
-      <app-button>Loans</app-button>
-      <app-button>Investments</app-button>
+      <app-button *ngFor="let button of buttons; let i = index" [button]="buttons[i]"></app-button>
     </div>
     <ul class="d-flex p-3 flex-wrap">
       <li class="d-flex justify-content-around w-100">
         <div class="p-1">Name</div>
         <div class="p-1">Acount</div>
-      </li>      
+      </li>
       <li class="d-flex justify-content-around w-100 border-top">
         <div class="p-1">Text</div>
         <div class="p-1">Text</div>
