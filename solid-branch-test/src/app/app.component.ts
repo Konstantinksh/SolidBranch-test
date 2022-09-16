@@ -14,27 +14,26 @@ export class AppComponent {
   list: IList;
   constructor(private route: ActivatedRoute) { }
   
-  title = 'Kanstantsin Krauchuk';
-  subtitle = 'SolidBranch test task';
+  name = 'Kanstantsin Krauchuk, 2022.09.16';
+  title = 'SolidBranch test task';
   data: IUser[] = users.data;
-  types = ['income', 'outcome', 'loan', 'investment'];
+  personTypes = ['income', 'outcome', 'loan', 'investment'];  
   buttons = ['Income', 'Outcome', 'Loan', 'Investments'];
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.tab = params.tab;
       this.list = this.data
-        .reduce((acum, cur) => {
-          if (cur.type !== this.types[this.tab]) return acum;
-          const fullName = `${cur.name.first} ${cur.name.last}`;
-          if (!acum[fullName]) {
-            acum[fullName] = [cur.type, 1];
+        .reduce((accumulator, current) => {
+          if (current.type !== this.personTypes[this.tab]) return accumulator;
+          const fullName = `${current.name.first} ${current.name.last}`;
+          if (!accumulator[fullName]) {
+            accumulator[fullName] = [current.type, 1];
           } else {
-            acum[fullName][1] += 1;
+            accumulator[fullName][1] += 1;
           }
-          return acum;
+          return accumulator;
         }, {} as IList);
     })
-
   }
 }
