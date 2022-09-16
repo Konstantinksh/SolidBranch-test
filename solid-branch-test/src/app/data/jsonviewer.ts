@@ -13,6 +13,90 @@ export const users = {
       "email": "jordan.bauer@snorus.net",
       "phone": "+1 (901) 404-2928",
       "address": "712 Bills Place, Cochranville, Florida, 6951"
+    },{
+      "_id": "5d99beb677015a5c2c14542e",
+      "amount": "floating(1, 4000, 2)",
+      "type": "outcome",
+      "name": {
+        "first": "Jordan",
+        "last": "Bauer"
+      },
+      "company": "SNORUS",
+      "email": "jordan.bauer@snorus.net",
+      "phone": "+1 (901) 404-2928",
+      "address": "712 Bills Place, Cochranville, Florida, 6951"
+    },{
+      "_id": "5d99beb677015a5c2c14542e",
+      "amount": "floating(1, 4000, 2)",
+      "type": "outcome",
+      "name": {
+        "first": "Jordan",
+        "last": "Bauer"
+      },
+      "company": "SNORUS",
+      "email": "jordan.bauer@snorus.net",
+      "phone": "+1 (901) 404-2928",
+      "address": "712 Bills Place, Cochranville, Florida, 6951"
+    },{
+      "_id": "5d99beb677015a5c2c14542e",
+      "amount": "floating(1, 4000, 2)",
+      "type": "outcome",
+      "name": {
+        "first": "Jordan",
+        "last": "Bauer"
+      },
+      "company": "SNORUS",
+      "email": "jordan.bauer@snorus.net",
+      "phone": "+1 (901) 404-2928",
+      "address": "712 Bills Place, Cochranville, Florida, 6951"
+    },{
+      "_id": "5d99beb677015a5c2c14542e",
+      "amount": "floating(1, 4000, 2)",
+      "type": "outcome",
+      "name": {
+        "first": "Jordan",
+        "last": "Bauer"
+      },
+      "company": "SNORUS",
+      "email": "jordan.bauer@snorus.net",
+      "phone": "+1 (901) 404-2928",
+      "address": "712 Bills Place, Cochranville, Florida, 6951"
+    },{
+      "_id": "5d99beb677015a5c2c14542e",
+      "amount": "floating(1, 4000, 2)",
+      "type": "outcome",
+      "name": {
+        "first": "Jordan",
+        "last": "Bauer"
+      },
+      "company": "SNORUS",
+      "email": "jordan.bauer@snorus.net",
+      "phone": "+1 (901) 404-2928",
+      "address": "712 Bills Place, Cochranville, Florida, 6951"
+    },{
+      "_id": "5d99beb677015a5c2c14542e",
+      "amount": "floating(1, 4000, 2)",
+      "type": "outcome",
+      "name": {
+        "first": "Jordan",
+        "last": "Bauer"
+      },
+      "company": "SNORUS",
+      "email": "jordan.bauer@snorus.net",
+      "phone": "+1 (901) 404-2928",
+      "address": "712 Bills Place, Cochranville, Florida, 6951"
+    },{
+      "_id": "5d99beb677015a5c2c14542e",
+      "amount": "floating(1, 4000, 2)",
+      "type": "outcome",
+      "name": {
+        "first": "Jordan",
+        "last": "Bauer"
+      },
+      "company": "SNORUS",
+      "email": "jordan.bauer@snorus.net",
+      "phone": "+1 (901) 404-2928",
+      "address": "712 Bills Place, Cochranville, Florida, 6951"
     },
     {
       "_id": "5d99beb69a6aac64be820dbe",

@@ -1,4 +1,4 @@
-import { Component } from "@angular/core"
+import { Component, Input } from "@angular/core"
 
 @Component ({
   selector: 'app-list-item',
@@ -6,4 +6,6 @@ import { Component } from "@angular/core"
 })
 
 export class ListItemComponent {
+  @Input() person: string;
+  @Input() count: number;
 }
