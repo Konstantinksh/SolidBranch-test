@@ -9,14 +9,15 @@ import { IUser } from "src/app/models/user";
 })
 
 export class Table {
+  paramsSubscription: any;
   constructor(private route: ActivatedRoute) { }
-  tab: number;
-  list: IList;
+  private tab: number;
+  public list: IList;
   @Input() data: IUser[];
-  personTypes = ['income', 'outcome', 'loan', 'investment'];  
+  private personTypes = ['income', 'outcome', 'loan', 'investment'];  
   
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
+    this.paramsSubscription = this.route.queryParams.subscribe(params => {
       this.tab = params.tab;
       this.list = this.data
         .reduce((accumulator, current) => {
@@ -30,5 +31,9 @@ export class Table {
           return accumulator;
         }, {} as IList);
     })
+  }
+
+  ngOnDestroy() {
+    this.paramsSubscription.unsubscribe();
   }
 }
