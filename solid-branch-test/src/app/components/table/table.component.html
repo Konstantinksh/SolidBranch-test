@@ -1,0 +1,12 @@
+<table class="d-flex justify-content-center flex-wrap p-3 mx-3 border border-dark border-top-0 rounded-bottom">
+  <tr class="d-flex justify-content-around w-100">
+    <th class="p-1">Name</th>
+    <th class="p-1">Acount</th>
+  </tr>
+  <tr *ngFor="let item of list | keyvalue"  class="d-flex justify-content-around w-100 border-top">        
+    <app-list-item 
+    class="d-flex w-100"
+    [person]="item.key" [count]="item.value[1]"
+    ></app-list-item>
+  </tr>
+</table>

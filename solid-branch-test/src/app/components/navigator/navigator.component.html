@@ -1,0 +1,7 @@
+<nav class="d-flex justify-content-center mt-5 mx-3 px-1 pt-1 border border-dark border-bottom-0 rounded-top">
+  <app-button 
+  *ngFor="let button of buttons; let i = index" [button]="buttons[i]"
+  [routerLink]="['/navigator']"
+  [queryParams]="{tab: i}"
+  ></app-button>
+</nav>

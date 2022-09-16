@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
+import { AppNavigator } from './components/navigator/navigator.component';
+import { Table } from './components/table/table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    ListItemComponent
+    ListItemComponent,
+    AppNavigator,
+    Table
   ],
   imports: [
     BrowserModule,
