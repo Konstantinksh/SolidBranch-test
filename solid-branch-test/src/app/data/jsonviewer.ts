@@ -1,4 +1,6 @@
-export const users = {
+import { IUsers } from "../models/user";
+
+export const users: IUsers = {
   "total": 100,
   "data": [
     {

@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core"
+import {  Router } from '@angular/router';
 
 @Component ({
   selector: 'app-button',
@@ -6,5 +7,6 @@ import { Component, Input } from "@angular/core"
 })
 
 export class ButtonComponent {
-  @Input() button: string;
+  constructor() { }
+  @Input() button: string
 }
